@@ -1,7 +1,7 @@
 ![Intro page](https://drive.google.com/uc?export=view&id=1XH3i7_4bbk1zE4XhImlhdGWnvT7lZr0F)
-<h1>Presenting You the First Psychiatric Assistant PSY-PI</h1>
-<h2>Here is a short working of our project</h2>
 ![gif](https://drive.google.com/uc?export=view&id=1mPliBGCSiCloPLsr2X7eHFnF8x4jnknP)
+<h1>Presenting You the First Psychiatric Assistant PSY-PI</h1>
+
 <h2>BACKGROUND</h2>
 <p>
 The pandemic played with the minds of all the humans beings on the planet. It was fruitful for someone and it was a disaster for many. This pandemic led to unemployment for many people who were devastated and it affected them deeply.
