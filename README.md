@@ -50,7 +50,7 @@ Participating makes us do several things in a limited time where we learn quickl
 <p>
 Our future aim is to add a personal assistant to make it communicate to the user realtime. Adding chatbots for asking frequent questions when the user returns to our web application. We also hoped to add real life psychiatrists, such that the user could also contact them and have feedback based on their analysis overall. So yeah, We tried making difference in the lives of these people.
 </p>
-<h1>Reminder: You Are A UNIQUE !</h1>
+<h1>Reminder: You Are UNIQUE !</h1>
 <h2>I hope we made some difference in the lives of these people.</h2>
 
 <h3> 🤝🏻 Connect with Team Pi </h3>
