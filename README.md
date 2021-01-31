@@ -33,7 +33,7 @@ Camera input in the form of several frames -->>Face Detection -->>Facial Landmar
 </p>
 <h2>Challenges We Ran Into ! </h2>
 <p>So it was really difficult to train but and embed in the backend. Also, Our main aim was to deploy it using domain.com but we couldn't since everything took time.<br>
-At times Computer Vision wasn't able to detect properly and we were able to achieve it using haarcascade detection and many more. Well none of us was a web developer but we tried learning django by reffering several online sites and we could come up with the current project shown.</p>
+At times Computer Vision wasn't able to detect properly and we were able to achieve it using haarcascade detection and many more. Well to be honest our team members were a beginner in web development but we tried learning django by reffering several online sites and we could come up with the current project shown.</p>
 
 <h2>Accomplishments We Are Proud Of</h2>
 <p>Yeah, We are proud of providing a statistical analysis to the user as our output giving probability of each emotion at real time response. Further, Computer Vision helped us a lot and later we could build a simple django application.</p>
