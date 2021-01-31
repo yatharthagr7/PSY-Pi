@@ -30,6 +30,11 @@ The faces have been automatically registered so that the face is more or less ce
 Final model first includes 3 consecutive blocks consisting of the following four layers : one-dimensional convolution layer - max pooling - spatial dropout - batch normalization. The numbers of convolution filters are respectively 128, 256 and 512 for each block, kernel size is 8, max pooling size is 2 and dropout rate is 0.3. Following the three blocks, we chose to stack 3 LSTM cells with 180 outputs each. Finally, a fully connected layer of 128 nodes is added before the last classification layer.<br>
 A brief overview of how it works is:<br>
 Camera input in the form of several frames -->>Face Detection -->>Facial Landmarks Detection -->>Classification -->>Output in the form of graph
+
+
+[Click here for the datasets](https://drive.google.com/drive/folders/1MfXn-GFqrw1LRZ1Y3bEZXoJbu8iQIAEN?usp=sharing)
+You can access all the datasets here.. Cheers !!
+
 </p>
 <h2>Challenges We Ran Into ! </h2>
 <p>So it was really difficult to train but and embed in the backend. Also, Our main aim was to deploy it using domain.com but we couldn't since everything took time.<br>
@@ -46,3 +51,10 @@ Our future aim is to add a personal assistant to make it communicate to the user
 </p>
 <h1>Reminder: You Are A UNIQUE !</h1>
 <h2>I hope we made some difference in the lives of these people.</h2>
+
+<h3> 🤝🏻 Connect with Team Pi </h3>
+:star: Members of Team Pi
+
+:brain: Yatharth Agarwal
+:brain: Swarup Tripathy
+:brain: Anvit Agarwal
