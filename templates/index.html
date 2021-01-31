@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" style="margin-left: 60px; margin-right: 60px;">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans" />
+    <title>PSY-Pi</title>
+
+  </head>
+  <body>
+    
+    
+    <br>
+
+ {% block body %}
+
+  <!--
+  Video Interview presentation
+  -->
+  <div>
+      <div>
+        <img src = "/static/CSS/images/1.png" width=100%; height="750px" style="float:right; margin-top: -15px;">
+      </div>
+
+      <div  style=" text-align:justify; display:inline-block;">
+        <br><br>
+
+          <h2 style="font-size: 60px; border-bottom: 1px solid; margin-bottom: 5px;
+          padding-bottom: 20px; border-bottom-width: 2px; font-family: Secular One;">Background</h2>
+          <br>
+          <img src="/static/CSS/images/11098.jpg" style="width: 600px; height: 600px;float: right;">
+          <p style="font-family: PT Sans; width: 50%; font-size: 25px; padding-top: 20px;">
+            The pandemic played with the minds of all the humans beings on the planet. It was fruitful for someone and it was a disaster for many. 
+            This pandemic led to unemployment for many people who were devastated and it affected them deeply.
+            For students like us we were forced to engage ourselves with online classes and online learning took place at a major scale. 
+            Students who didn’t had the habit of being in front of their computers for a long time developed some psychiatry problems affecting 
+            their mental and personal health. Since everything came to a pause for a long time that is from school going kids playing outside to the 
+            people engaged in the industrial sectors. In three psychiatry case-control cohorts, we compared the perceived mental health impact and coping and 
+            changes in depressive symptoms, anxiety, worry, and loneliness before and during the COVID-19 pandemic between people with and without lifetime depressive, 
+            anxiety, or obsessive-compulsive disorders.
+            </p>
+          <br>
+          <br>
+      </div>
+      <div style=" text-align:justify; display:inline-block;">
+          <h2 style="font-size: 60px; border-bottom: 1px solid; margin-bottom: 5px;
+          padding-bottom: 20px; border-bottom-width: 2px; font-family: Secular One; display: block;">General</h2><br>
+          <img src="/static/CSS/images/face re.jpg" style="width: 700px; height: 600px;float: left;">
+          <p style="font-family: PT Sans; width: 42%; font-size: 25px; padding-top: 20px; float: right;">
+            Don’t Worry Now! We Team Pi present you PSY-Pi, Your personal Virtual Psychiatrist who let’s you know about your emotions and makes you aware about them. 
+            PSY-Pi works on the principle of computer vision. All we require is a working camera installed in your computer or laptop. 
+            PSY-Pi was made to give real time analysis of the behavioral changes observed in the person. Often behavioral changes or the mood swings leads to 
+            several mental health issues and people without knowing are admitted to the hospitals. We Team Pi had a vision of avoiding all those psychiatrists 
+            demanding huge amount of money. All you need to do is don’t waste money on them unnecessarily and head to our web page before when you require to 
+            analyse a person whether he/she is your classmate, friend, colleague, sibling, relative or any other relation you have with the other person.<br><br></p>
+          <br>
+          <br>
+      </div>
+      
+
+  </div>
+
+
+  <div>
+    <!--
+    Video Interview button
+    -->
+    <div style="padding-top: 30px;font-family: PT Sans; font-size: 30px; text-align: center;">
+      <p>So, you must be curious to know how we came up with this idea and what all
+        resources or libraries has been used by us<br><br>
+        Click below to find out the secrets behind this
+      </p>
+    </div>
+     <div style="padding-top: 20px; text-align: center;" >
+         <form action="/video" method="post" align="center" >
+         <input type="submit" name="video" value="Let's Go" align="center" >
+       </form>
+     </div>
+
+     
+</div>
+
+
+<br>
+
+      {# Fin du bloc "body" #}
+    {% endblock %}
+
+    <div style="padding-top: 100px; display:inline-block;padding-right: 30px;">
+      <p style="padding-right: 30px; font-family: PT Sans; font-size: 35px;">To know about the brains behind the project. Head to 
+      <a href="/rules" style="font-family: PT Sans; font-size: 45px; ">ABOUT US</a></p>
+    </div>
+
+  </body>
+</html>

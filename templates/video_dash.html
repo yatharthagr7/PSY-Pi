@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr" style="margin-left: 30px;">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/CSS/style.css">
+      <script type="text/javascript" src="/static/js/d3/d3.js"></script>
+      <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <title>Dashboard</title>
+
+  </head>
+  <body>
+    <div>
+      <a href="/">
+        <div>
+            <img src = "/static/CSS/images/circ.png" style="float: right;display: block; width: 30%;"><br>
+          <div>
+            <img src = "/static/CSS/images/circ2.png" style="display: block; width: 30%; position: absolute;right: -0.25%; top: 170%;">
+          </div>
+          <div>
+            <img src = "/static/CSS/images/circ.png" style="position: absolute;display: block; width: 30%;right: -0.25%; top: 350%"><br>
+          </div>
+        </div>
+        
+      </a>
+    
+
+  
+
+  {% block body %}
+
+ <div >
+  <div >
+    <h2 style="width: 1000px; font-size: 60px; border-bottom: 1px solid; margin-bottom: 5px;
+    padding-bottom: 20px; border-bottom-width: 2px; font-family: Secular One;">Hey there! Your Results</h2><br>
+    
+    <p style="font-family: PT Sans; width: 42%; font-size: 25px; padding-top: 20px; float: right;">
+    <br><br></p>
+    
+   <br>
+  <div >
+
+    <div style=" font-family: PT Sans; font-size: 30px;padding-bottom: 30px;">
+      Your result is displayed below, Analyse yourself in the best possible manner and remember You Are Unique !
+    </div>
+    
+    <div  id="hist_density_perso"></div>
+    
+  </div>
+  <div style="position: absolute; right: 350px; top: 260px;">
+    <h3 style=" font-size: 30px;font-family: Secular One;">Your Emotions %  </h3><br><br>
+    <div>
+      <ul>
+        <div style="font-family: PT Sans; font-size: 25px;">
+          <li>Displease : {{prob[0]}}%</li>
+          <li>Disinterested : {{prob[1]}}%</li>
+          <li>Nervous : {{prob[2]}}%</li>
+          <li>Happiness : {{prob[3]}}%</li>
+          <li>Unsure : {{prob[4]}}%</li>
+          <li>Confused : {{prob[5]}}%</li>
+          <li>Neutrality : {{prob[6]}}%</li>
+        </div>
+      </ul>
+    </div>
+    
+  </div>
+  <br>
+  <p style="font-family: PT Sans; font-size: 27px;">Your most frequent emotion is :  <i style="font-family: PT Sans; font-size: 35px;"><strong>{{emo}}</strong></i></p>
+<br>
+<br>
+  
+
+<div >
+  <h2 style="width: 1000px; font-size: 60px; border-bottom: 1px solid; margin-bottom: 5px; padding-top: 50px;
+    padding-bottom: 20px; border-bottom-width: 2px; font-family: Secular One;">Other Candidates Results</h2><br>
+    
+  <p style="font-family: PT Sans; width: 42%; font-size: 25px; padding-top: 20px; float: right;">
+  <br><br></p>
+    
+   <br>
+<div>
+  <div id="hist_density"></div>
+    <div style="position: absolute; right: 350px; top: 1000px;">
+      <h3 style=" font-size: 30px;font-family: Secular One;">Their Emotions %  </h3><br><br>
+        <div>
+          <ul>
+            <div style="font-family: PT Sans; font-size: 25px;">
+              <li>Displease    : {{prob_other[0]}}%</li>
+              <li>Disinterested : {{prob_other[1]}}%</li>
+              <li>Nervous     : {{prob_other[2]}}%</li>
+              <li>Happy    : {{prob_other[3]}}%</li>
+              <li>Neutral  : {{prob_other[4]}}%</li>
+              <li>Unsure   : {{prob_other[5]}}%</li>
+              <li>Confused : {{prob_other[6]}}%</li>
+            </div>
+          </ul>
+        </div>
+      <br>
+    </div>
+</div>
+
+<br>
+  <p style="font-family: PT Sans; font-size: 27px;">Usually the most frequent emotion of previous users is :  <i style="font-family: PT Sans; font-size: 35px;"><strong>{{emo_other}} </strong></i></p>
+<br>
+<br>
+
+<img src="/static/CSS/images/3918491.jpg" style="width: 850px; height: 750px;float: left;">
+<br>
+
+
+<div style="padding-top: 50px;" >
+  <h2 style="width: 1000px; font-size: 60px; border-bottom: 1px solid; margin-bottom: 5px; 
+      padding-bottom: 20px; border-bottom-width: 2px; font-family: Secular One;">Results obtained Over Time</h2><br>
+      
+  <p style="font-family: PT Sans; width: 42%; font-size: 25px; padding-top: 20px; float: right;">
+  <br><br></p>
+      
+  <br>
+<div>
+  <div >
+  <iframe src="static/CSS/chart.html" width="1400px" height="600px" frameBorder="0"></iframe>
+
+
+  <script type="text/javascript" src="static/js/hist_vid_perso.js"></script>
+  <script type="text/javascript" src="static/js/hist_vid_glob.js"></script>
+
+  <!--<img src='newplot.png'>-->
+  
+  <div style="margin-top: -60px;" >
+    <h2 style="width: 1000px; font-size: 60px; border-bottom: 1px solid; margin-bottom: 5px; 
+        padding-bottom: 20px; border-bottom-width: 2px; font-family: Secular One;">Future Goals</h2><br>
+        
+    <p style="font-family: PT Sans; width: 70%; font-size: 25px; padding-top: 20px; ">
+    So currently the model takes in 45 seconds of the video and then takes in the input of each frames and then
+    with the help of the dataset it then classifies the emotions.<br><br>
+    Our future aim is to add a personal assistant to make it communicate to the user realtime. 
+    Adding chatbots for asking frequent questions when the user returns to our web application.
+     We also hoped to add real life psychiatrists, such that the user could also contact them and have feedback based on 
+     their analysis overall. So yeah, We tried making difference in the lives of these people.
+      <br><br></p>
+        
+    <br>
+  <div>
+
+
+  {% endblock %}
+
+</body>
+</html>
