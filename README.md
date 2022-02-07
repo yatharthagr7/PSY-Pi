@@ -58,6 +58,10 @@ Our future aim is to add a personal assistant to make it communicate to the user
 <h3> 🤝🏻 Connect with Team Pi </h3>
 :star: Members of Team Pi
 
-:brain: Yatharth Agarwal
-:brain: Swarup Tripathy
-:brain: Anvit Agarwal
+## Brains behind this project:
+
+<a href="https://github.com/Curovearth"> :brain: Swarup Tripathy </a>
+
+<a href="https://github.com/yatharthagr7"> :brain: Yatharth Agarwal </a>
+
+<a href="https://github.com/anvit1618"> :brain: Anvit Agarwal </a>
